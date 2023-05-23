@@ -1,0 +1,238 @@
+.games {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.games__container {
+  display: grid;
+  grid-template-columns: 1fr 1.32fr;
+}
+
+.games__invite {
+  padding: 65px 80px;
+  background-color: $color-torch-red;
+}
+
+.games__invite-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.games__invite-info h2 {
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 79px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+}
+
+.games__invite-info-table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 30%;
+  margin-top: 15px;
+}
+
+.games__invite-info-date dt,
+.games__invite-info-time dt {
+  position: relative;
+  padding: 0 10px;
+  width: fit-content;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+}
+
+.games__invite-info-date dt::after,
+.games__invite-info-time dt::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 9px;
+  bottom: -5px;
+  width: 114%;
+  height: 1px;
+  background-color: $color-default-white;
+}
+
+.games__invite-info-time dt::after {
+  width: 131%;
+}
+
+.games__invite-info-date dd,
+.games__invite-info-time dd {
+  margin-left: 0;
+  padding: 0 10px;
+  transform: translate(0, -1px);
+}
+
+.games__invite-info-date dd {
+  display: flex;
+}
+
+.games__invite-info-date span,
+.games__invite-info-time dd {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: $color-default-white;
+}
+
+.games__invite-info-date small {
+  margin: auto 8px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-default-white;
+}
+
+.games__invite p {
+  margin-top: 0;
+  margin-bottom: 43px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+  transform: translate(-1px, -6px);
+}
+
+.games__invite-button {
+  width: 100%;
+  justify-content: center;
+  padding: 24px;
+}
+
+.games__invite-button:hover,
+.games__invite-button:focus,
+.games__invite-button:active {
+  background: $red-to-blue-numb;
+}
+
+.games__image {
+  background-color: $color-chambray;
+}
+
+.games__image img {
+  height: 100%;
+}
+
+
+@media (max-width: $vp-1199) {
+  .games {
+    padding-top: 99px;
+    padding-bottom: 70px;
+  }
+
+  .games__invite {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    padding: 54px 45px;
+  }
+
+  .games__invite-info-table {
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  .games__invite-info {
+    margin-top: -22px;
+  }
+
+  .games__invite-info h2 {
+    margin-left: 8px;
+    margin-bottom: 15px;
+    font-size: 48px;
+    line-height: 46px;
+  }
+
+  .games__invite-info-time {
+    transform: translate(0, -1px);
+  }
+
+  .games__invite-info-date dt,
+  .games__invite-info-time dt {
+    padding: 0 5px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .games__invite-info-date dt::after,
+  .games__invite-info-time dt::after {
+    left: 5px;
+    bottom: -2px;
+    width: 120%;
+  }
+
+  .games__invite-info-time dt::after {
+    width: 134%;
+  }
+
+  .games__invite-info-date dd,
+  .games__invite-info-time dd {
+    padding: 0 5px;
+  }
+
+  .games__invite-info-date span,
+  .games__invite-info-time dd {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .games__invite-info-date small {
+    margin: auto 4px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .games__invite p {
+    margin-bottom: 28px;
+    font-size: 12px;
+    line-height: 18px;
+    transform: translate(0, -6px);
+  }
+
+  .games__invite-button {
+    padding: 11px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .games {
+    margin-bottom: 32px;
+    padding-top: 69px;
+    padding-bottom: 33px;
+  }
+
+  .games__container {
+    grid-template-columns: 1fr;
+  }
+
+  .games__invite {
+    padding: 54px 45px 53px;
+  }
+
+  .games__image {
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .games__image img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

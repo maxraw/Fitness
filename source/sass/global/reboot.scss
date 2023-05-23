@@ -17,7 +17,8 @@ html {
   font-size: $fz-default;
   line-height: 24px;
   font-family: $ff-placeholder;
-  color: $color-default-black;
+  color: $color-sapphire;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,6 +30,7 @@ html {
 
 body {
   width: 100%;
+  min-width: 320px;
   height: 100%;
 
   background-color: $color-default-white;
@@ -43,7 +45,6 @@ img,
 video {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 textarea {
