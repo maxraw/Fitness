@@ -1,5 +1,9 @@
+import Swiper from '../../vendor/swiper';
+
 export function initSlider() {
-  new Swiper('.trainers__slider', {
+  const createSwiper = (selector, options) => new Swiper(selector, options);
+
+  createSwiper('.trainers__slider', {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 33,
@@ -25,7 +29,7 @@ export function initSlider() {
     },
   });
 
-  new Swiper('.reviews__slider', {
+  createSwiper('.reviews__slider', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 33,
