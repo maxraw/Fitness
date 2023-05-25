@@ -2548,6 +2548,14 @@ button,
   display: none;
 }
 
+.slider__button.swiper-button-prev.reviews__button-prev {
+  left: 5px;
+}
+
+.slider__button.swiper-button-next.reviews__button-next {
+  right: 5px;
+}
+
 .advantages {
   padding-top: 53px;
   padding-bottom: 119px;
@@ -2978,14 +2986,6 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-}
-
-.slider__button.swiper-button-prev.reviews__button-prev {
-  left: 5px;
-}
-
-.slider__button.swiper-button-next.reviews__button-next {
-  right: 5px;
 }
 
 .contacts {
@@ -4526,14 +4526,6 @@ button,
     padding: 40px 62px 41px;
   }
 
-  .slider__button.swiper-button-prev.reviews__button-prev {
-    left: -6px;
-  }
-
-  .slider__button.swiper-button-next.reviews__button-next {
-    right: -6px;
-  }
-
   .contacts {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -4956,6 +4948,14 @@ button,
   .slider__button.swiper-button-next {
     right: 7px;
     top: 50%;
+  }
+
+  .slider__button.swiper-button-prev.reviews__button-prev {
+    left: -6px;
+  }
+
+  .slider__button.swiper-button-next.reviews__button-next {
+    right: -6px;
   }
 
   .advantages {
