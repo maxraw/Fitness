@@ -39,8 +39,6 @@
   width: 80px;
   height: 80px;
   margin-top: 41px;
-  // align-items: center;
-  // align-self: center;
   transform: translate(2px, -19px);
   overflow: hidden;
   background-color: $color-chambray;
@@ -62,14 +60,6 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
-}
-
-.slider__button.swiper-button-prev.reviews__button-prev {
-  left: 5px;
-}
-
-.slider__button.swiper-button-next.reviews__button-next {
-  right: 5px;
 }
 
 @media (max-width: $vp-1199) {
@@ -95,14 +85,6 @@
 
   .reviews__item {
     padding: 40px 62px 41px;
-  }
-
-  .slider__button.swiper-button-prev.reviews__button-prev {
-    left: -6px;
-  }
-
-  .slider__button.swiper-button-next.reviews__button-next {
-    right: -6px;
   }
 }
 
