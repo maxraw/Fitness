@@ -2861,20 +2861,20 @@ button,
 }
 
 .slider__item:hover .slider__item-content h2,
-.slider__item:focus .slider__item-content h2,
+.slider__item:focus-within .slider__item-content h2,
 .slider__item:active .slider__item-content h2 {
   margin-bottom: 0;
 }
 
 .slider__item:hover .slider__item-content,
-.slider__item:focus .slider__item-content,
+.slider__item:focus-within .slider__item-content,
 .slider__item:active .slider__item-content {
   padding: 30px 35px 28px;
   background-color: rgba(16, 38, 84, 0.89);
 }
 
 .slider__item:hover .slider__item-content-text,
-.slider__item:focus .slider__item-content-text,
+.slider__item:focus-within .slider__item-content-text,
 .slider__item:active .slider__item-content-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2891,8 +2891,7 @@ button,
 
 .slider__item-picture img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
   -o-object-position: center;
      object-position: center;
 }
@@ -2955,6 +2954,10 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 13px;
+  max-height: 147px;
+}
+.slider__item-content-list:hover {
+  overflow-y: scroll;
 }
 
 .slider__item-content-item {
@@ -3033,19 +3036,19 @@ button,
             transform: translate(1px, 0);
   }
   .slider__item:active .slider__item-content,
-.slider__item:focus .slider__item-content,
+.slider__item:focus-within .slider__item-content,
 .slider__item:hover .slider__item-content {
     padding: 30px 36px 35px;
   }
   .slider__item:active .slider__item-content h2,
-.slider__item:focus .slider__item-content h2,
+.slider__item:focus-within .slider__item-content h2,
 .slider__item:hover .slider__item-content h2 {
     -webkit-transform: translate(-5px, 3px);
         -ms-transform: translate(-5px, 3px);
             transform: translate(-5px, 3px);
   }
   .slider__item:active .slider__item-content-text p,
-.slider__item:focus .slider__item-content-text p,
+.slider__item:focus-within .slider__item-content-text p,
 .slider__item:hover .slider__item-content-text p {
     -webkit-transform: translate(-4px, -1px);
         -ms-transform: translate(-4px, -1px);
@@ -3064,7 +3067,7 @@ button,
             transform: translate(0, 0);
   }
   .slider__item:active .slider__item-content,
-.slider__item:focus .slider__item-content,
+.slider__item:focus-within .slider__item-content,
 .slider__item:hover .slider__item-content {
     padding: 16px 13px 37px;
   }
@@ -3822,7 +3825,7 @@ button,
     margin-top: -90px;
   }
   .reviews__item-content h3 {
-    margin-left: auto;
+    margin-left: 105px;
     margin-bottom: 23px;
     width: 45%;
     min-height: 52px;
